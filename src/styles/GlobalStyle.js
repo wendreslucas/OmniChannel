@@ -43,5 +43,14 @@ export const GlobalStyle = createGlobalStyle`
    --gray3:#828282;
    --gray4:#BDBDBD;
    --gray5: #E0E0E0;
+
+   // Tipografia
+   --heading1: 56px;
+   --heading2: 48px;
+   --heading3: 40px;
+   --heading4: 32px;
+   --heading5: 24px;
+   --heading6: 20px;
+
  }
 `;
