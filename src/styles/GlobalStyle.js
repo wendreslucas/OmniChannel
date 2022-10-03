@@ -17,7 +17,31 @@ export const GlobalStyle = createGlobalStyle`
  *, button, input {
     border: 0;
     background: none;
-    font-family: 'Roboto ', sans-serif, 'Raleway', sans-serif;  
+    font-family: 'Roboto ', sans-serif, 'Raleway', sans-serif; 
     
+ }
+ :root {
+   // cores da marca
+   --primary: #03303B;
+   --secondary: #A2D6D3;
+
+   // cores de status
+   --info:#2F80ED;
+   --success: #27AE60;
+   --warning: #E2B93B;
+   --error:#EB5757;
+
+   // cores base
+   --black1: #1D1D1D;
+   --black2:#282828;
+   --background:#F4FBFA;
+   --white: #FCFCFC;
+
+   // Tons de cinza
+   --gray1: #333333;
+   --gray2:#4F4F4F;
+   --gray3:#828282;
+   --gray4:#BDBDBD;
+   --gray5: #E0E0E0;
  }
 `;
