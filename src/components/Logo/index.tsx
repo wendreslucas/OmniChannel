@@ -1,9 +1,9 @@
 import { Container } from './styles';
-import { Logo } from './../Logo/index';
-export const Header = () => {
+
+export const Logo = () => {
   return (
     <Container>
-      <Logo />
+      <p>L</p>
     </Container>
   );
 };
