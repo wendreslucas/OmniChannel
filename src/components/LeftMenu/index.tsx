@@ -8,6 +8,7 @@ import { Card } from './../Cards/CardAtendimento/index';
 import StickyBox from 'react-sticky-box';
 
 import { Counter } from '../Counter';
+import { CardEspera } from './../Cards/CardEspera/index';
 
 export const LeftMenu = () => {
   const [search, setInputSearch] = useState('');
@@ -51,6 +52,7 @@ export const LeftMenu = () => {
             <MdKeyboardArrowUp fontSize={26} />
           </Div>
         </Section>
+        <CardEspera />
       </StickyBox>
     </Container>
   );
