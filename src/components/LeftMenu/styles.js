@@ -8,6 +8,11 @@ export const Container = styled.aside`
   width: 410px;
 `;
 
+export const Section = styled.div`
+  display: flex;
+  align-items: center;
+`;
+
 export const SubDivision = styled.div`
   display: flex;
   align-items: baseline;
@@ -16,5 +21,10 @@ export const SubDivision = styled.div`
 export const Divider = styled.hr`
   border: 0;
   border-bottom: 1px solid var(--secondary);
-  width: 420px;
+  /* width: 420px; */
+  width: ${props => props.width};
+`;
+
+export const Div = styled.div`
+  display: flex;
 `;

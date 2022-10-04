@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
-import { Container, SubDivision, Divider } from './styles';
+import { Container, SubDivision, Divider, Div, Section } from './styles';
 import { Title } from './../Typography/Title/index';
 import { Subtitle } from './../Typography/Subtitle/index';
 import { StyledInput, Input } from '../Input/InputSearch/styles';
-import { MdOutlineSearch } from 'react-icons/md';
-import { Card } from './../Card/index';
+import { MdKeyboardArrowUp, MdOutlineSearch } from 'react-icons/md';
+import { Card } from './../Cards/CardAtendimento/index';
 import StickyBox from 'react-sticky-box';
+
+import { Counter } from '../Counter';
 
 export const LeftMenu = () => {
   const [search, setInputSearch] = useState('');
@@ -32,16 +34,23 @@ export const LeftMenu = () => {
       <StickyBox>
         <SubDivision>
           <Subtitle fontSize="16px" Text="EM ANDAMENTO" />
-          <Divider />
+          <Divider width="500px" />
         </SubDivision>
         <Card active={true} />
+        {/* <Card active={false} />
         <Card active={false} />
-        <Card active={false} />
-        <Card active={false} />
+        <Card active={false} /> */}
         <SubDivision>
           <Subtitle fontSize="16px" Text="EM ESPERA" />
-          <Divider />
+          <Divider width="780px" />
         </SubDivision>
+        <Section>
+          <Subtitle fontSize="16px" Text="Campanha Saúde e vida" />
+          <Div>
+            <Counter Text="2" />
+            <MdKeyboardArrowUp fontSize={26} />
+          </Div>
+        </Section>
       </StickyBox>
     </Container>
   );

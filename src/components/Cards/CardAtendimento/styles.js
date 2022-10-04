@@ -12,6 +12,9 @@ export const Container = styled.div`
   padding: 8px 16px 8px 16px;
   margin-bottom: 8px;
   width: 346px;
+
+  &:hover {
+  }
 `;
 
 export const DivUser = styled.div`
