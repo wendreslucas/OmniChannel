@@ -1,10 +1,11 @@
 import React from 'react';
 import { Container } from './styles';
+import { HeaderBody } from './HeaderBody/index';
 
 export const Body = () => {
   return (
     <Container>
-      <h1>body</h1>
+      <HeaderBody />
     </Container>
   );
 };
