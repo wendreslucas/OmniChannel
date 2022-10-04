@@ -4,6 +4,7 @@ import { Title } from './../Typography/Title/index';
 import { Subtitle } from './../Typography/Subtitle/index';
 import { StyledInput, Input } from '../Input/InputSearch/styles';
 import { MdOutlineSearch } from 'react-icons/md';
+import { Card } from './../Card/index';
 
 export const LeftMenu = () => {
   const [search, setInputSearch] = useState('');
@@ -31,6 +32,7 @@ export const LeftMenu = () => {
         <Subtitle fontSize="16px" Text="EM ANDAMENTO" />
         <Divider />
       </SubDivision>
+      <Card />
     </Container>
   );
 };
