@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Container } from './styles';
+import { Container, SubDivision, Divider } from './styles';
 import { Title } from './../Typography/Title/index';
 import { Subtitle } from './../Typography/Subtitle/index';
 import { StyledInput, Input } from '../Input/InputSearch/styles';
@@ -15,7 +15,7 @@ export const LeftMenu = () => {
   return (
     <Container>
       <Title />
-      <Subtitle Text="Buscar atendimento" />
+      <Subtitle fontSize="14px" Text="Buscar atendimento" />
       <StyledInput className={'inputWithIcon'}>
         <Input
           type="text"
@@ -27,7 +27,10 @@ export const LeftMenu = () => {
           <MdOutlineSearch fontSize={24} color={''} />
         </div>
       </StyledInput>
-      <Subtitle Text="EM ANDAMENTO" />
+      <SubDivision>
+        <Subtitle fontSize="16px" Text="EM ANDAMENTO" />
+        <Divider />
+      </SubDivision>
     </Container>
   );
 };

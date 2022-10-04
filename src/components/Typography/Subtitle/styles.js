@@ -12,6 +12,6 @@ export const StyledSubtitle = styled.h2`
   font-family: 'Raleway';
   font-style: normal;
   font-weight: 700;
-  font-size: 14px;
+  font-size: ${props => props.fontSize};
   line-height: 20px;
 `;

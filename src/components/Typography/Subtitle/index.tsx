@@ -3,14 +3,15 @@ import { Container, StyledSubtitle } from './styles';
 
 interface ISubtitle {
   Text: string;
+  fontSize: string;
 }
 
-export const Subtitle = (children: ISubtitle) => {
-  const { Text } = children;
+export const Subtitle = (props: ISubtitle) => {
+  const { Text, fontSize } = props;
 
   return (
     <Container>
-      <StyledSubtitle>{Text}</StyledSubtitle>
+      <StyledSubtitle fontSize={fontSize}>{Text}</StyledSubtitle>
     </Container>
   );
 };
