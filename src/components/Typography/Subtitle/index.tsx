@@ -1,10 +1,16 @@
 import React from 'react';
 import { Container, StyledSubtitle } from './styles';
 
-export const Subtitle = () => {
+interface ISubtitle {
+  Text: string;
+}
+
+export const Subtitle = (children: ISubtitle) => {
+  const { Text } = children;
+
   return (
     <Container>
-      <StyledSubtitle>Buscar atendimento</StyledSubtitle>
+      <StyledSubtitle>{Text}</StyledSubtitle>
     </Container>
   );
 };

@@ -15,7 +15,7 @@ export const LeftMenu = () => {
   return (
     <Container>
       <Title />
-      <Subtitle />
+      <Subtitle Text="Buscar atendimento" />
       <StyledInput className={'inputWithIcon'}>
         <Input
           type="text"
@@ -27,6 +27,7 @@ export const LeftMenu = () => {
           <MdOutlineSearch fontSize={24} color={''} />
         </div>
       </StyledInput>
+      <Subtitle Text="EM ANDAMENTO" />
     </Container>
   );
 };
