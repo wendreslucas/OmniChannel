@@ -21,6 +21,7 @@ export const RigthContainer = styled.div`
 
   width: 200px;
 `;
+
 export const DivIconSms = styled.div`
   display: flex;
   flex-direction: column;
@@ -32,8 +33,10 @@ export const DivIconSms = styled.div`
   width: 56px;
   height: 40px;
 
-  background: #f4fbfa;
+  background: ${props => (props.active ? 'var(--background)' : 'var(--aba)')};
+  /* background: var(--background); */
   border-radius: 8px 8px 0px 0px;
+  cursor: pointer;
 `;
 
 export const DivEmail = styled.div`
@@ -47,8 +50,10 @@ export const DivEmail = styled.div`
   width: 56px;
   height: 40px;
 
-  background: #c2d3d7;
+  background: ${props => (props.active ? 'var(--background)' : 'var(--aba)')};
   border-radius: 8px 8px 0px 0px;
+
+  cursor: pointer;
 `;
 
 export const DivDuration = styled.div`

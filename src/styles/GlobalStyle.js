@@ -36,6 +36,7 @@ export const GlobalStyle = createGlobalStyle`
    --black2:#282828;
    --background:#F4FBFA;
    --white: #FCFCFC;
+   --aba:#C2D3D7;
 
    // Tons de cinza
    --gray1: #333333;

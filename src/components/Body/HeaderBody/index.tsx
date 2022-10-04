@@ -19,11 +19,11 @@ export const HeaderBody = () => {
     <Box>
       <Container>
         <RigthContainer>
-          <DivIconSms>
+          <DivIconSms active={true}>
             <FaWhatsapp fontSize={22} />
           </DivIconSms>
-          <DivEmail>
-            <MdOutlineEmail />
+          <DivEmail active={false}>
+            <MdOutlineEmail fontSize={22} />
           </DivEmail>
           <DivDuration>
             <Text lineHeight="22px" fontSize="16px" color="var(--primary)">
