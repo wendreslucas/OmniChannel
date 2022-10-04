@@ -5,6 +5,7 @@ import { Subtitle } from './../Typography/Subtitle/index';
 import { StyledInput, Input } from '../Input/InputSearch/styles';
 import { MdOutlineSearch } from 'react-icons/md';
 import { Card } from './../Card/index';
+import StickyBox from 'react-sticky-box';
 
 export const LeftMenu = () => {
   const [search, setInputSearch] = useState('');
@@ -28,18 +29,20 @@ export const LeftMenu = () => {
           <MdOutlineSearch fontSize={24} color={''} />
         </div>
       </StyledInput>
-      <SubDivision>
-        <Subtitle fontSize="16px" Text="EM ANDAMENTO" />
-        <Divider />
-      </SubDivision>
-      <Card active={true} />
-      <Card active={false} />
-      <Card active={false} />
-      <Card active={false} />
-      <SubDivision>
-        <Subtitle fontSize="16px" Text="EM ESPERA" />
-        <Divider />
-      </SubDivision>
+      <StickyBox>
+        <SubDivision>
+          <Subtitle fontSize="16px" Text="EM ANDAMENTO" />
+          <Divider />
+        </SubDivision>
+        <Card active={true} />
+        <Card active={false} />
+        <Card active={false} />
+        <Card active={false} />
+        <SubDivision>
+          <Subtitle fontSize="16px" Text="EM ESPERA" />
+          <Divider />
+        </SubDivision>
+      </StickyBox>
     </Container>
   );
 };
