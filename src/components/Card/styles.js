@@ -10,6 +10,7 @@ export const Container = styled.div`
   height: 60px;
   justify-content: space-between;
   padding: 8px 16px 8px 16px;
+  margin-bottom: 8px;
   width: 346px;
 `;
 

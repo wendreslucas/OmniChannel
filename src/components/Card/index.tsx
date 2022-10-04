@@ -9,9 +9,14 @@ import {
 } from './styles';
 import { FaWhatsapp } from 'react-icons/fa';
 
-export const Card = () => {
+interface CardProps {
+  active: boolean;
+}
+
+export const Card = (props: CardProps) => {
+  const { active } = props;
   return (
-    <Container active>
+    <Container active={active}>
       <DivUser>
         <UserImage src="/imagens/image2.png" alt="Foto do Usuário" />
         <UserName>Emanuelle Costa</UserName>

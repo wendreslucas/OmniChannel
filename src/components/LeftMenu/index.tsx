@@ -32,7 +32,14 @@ export const LeftMenu = () => {
         <Subtitle fontSize="16px" Text="EM ANDAMENTO" />
         <Divider />
       </SubDivision>
-      <Card />
+      <Card active={true} />
+      <Card active={false} />
+      <Card active={false} />
+      <Card active={false} />
+      <SubDivision>
+        <Subtitle fontSize="16px" Text="EM ESPERA" />
+        <Divider />
+      </SubDivision>
     </Container>
   );
 };
