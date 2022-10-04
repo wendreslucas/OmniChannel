@@ -22,7 +22,7 @@ export const UserImage = styled.img`
 
 export const DivButton = styled.div`
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   width: 125px;
 `;
