@@ -16,22 +16,6 @@ export const Box = styled.div`
   flex-grow: 0;
 `;
 
-export const ContainerAtendimento = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 32px;
-  gap: 8px;
-
-  width: 280px;
-  height: 372px;
-
-  flex: none;
-  order: 0;
-  align-self: stretch;
-  flex-grow: 0;
-`;
-
 export const Aling = styled.div`
   align-items: center;
   display: flex;
