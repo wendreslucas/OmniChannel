@@ -9,7 +9,12 @@ export const CardEspera = () => {
     <Container>
       <DivUser>
         <UserImage src="/imagens/image7.png" alt="Foto usuário" />
-        <Text fontSize="14px" color="var(--black1)" lineHeight="20px">
+        <Text
+          weight="400"
+          fontSize="14px"
+          color="var(--black1)"
+          lineHeight="20px"
+        >
           Amanda dos Anjos
         </Text>
       </DivUser>

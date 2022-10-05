@@ -11,7 +11,7 @@ import {
 } from './styles';
 import { FaWhatsapp } from 'react-icons/fa';
 import { MdOutlineEmail, MdOutlineSearch } from 'react-icons/md';
-import { Subtitle } from '../../Typography/Subtitle';
+
 import { Text } from '../../Typography/Text';
 
 export const HeaderBody = () => {
@@ -26,7 +26,12 @@ export const HeaderBody = () => {
             <MdOutlineEmail fontSize={22} />
           </DivEmail>
           <DivDuration>
-            <Text lineHeight="22px" fontSize="16px" color="var(--primary)">
+            <Text
+              weight="400"
+              lineHeight="22px"
+              fontSize="16px"
+              color="var(--primary)"
+            >
               Duração
             </Text>
             <p>05:21:22</p>
@@ -36,7 +41,12 @@ export const HeaderBody = () => {
 
         <LeftContainer>
           <DivInfo>
-            <Text lineHeight="22px" fontSize="16px" color="var(--primary)">
+            <Text
+              weight="400"
+              lineHeight="22px"
+              fontSize="16px"
+              color="var(--primary)"
+            >
               Protocolo ANS
             </Text>
             <p>34665-9</p>

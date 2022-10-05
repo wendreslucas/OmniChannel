@@ -4,7 +4,7 @@ export const Typography = styled.p`
   color: ${props => props.color};
   font-family: 'Raleway';
   font-style: normal;
-  font-weight: 400; // todo implementar props
+  font-weight: ${props => props.weight};
   font-size: ${props => props.fontSize};
   line-height: ${props => props.lineHeight};
 `;

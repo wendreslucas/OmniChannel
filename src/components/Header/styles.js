@@ -8,7 +8,7 @@ export const Container = styled.div`
   gap: 28px;
   height: 96px;
   justify-content: space-between;
-  max-width: 1534px;
+  max-width: 2560px;
   padding: 24px 32px;
 `;
 

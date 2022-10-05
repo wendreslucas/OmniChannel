@@ -35,7 +35,12 @@ export const Header = () => {
         <MenuContainer>
           <Imagem src="/imagens/image6.png" alt="Foto do atendente" />
           <ContainerText>
-            <Text fontSize="18px" color="var(--white)" lineHeight="25px">
+            <Text
+              weight="700"
+              fontSize="18px"
+              color="var(--white)"
+              lineHeight="25px"
+            >
               Joaquim Santos
             </Text>
           </ContainerText>

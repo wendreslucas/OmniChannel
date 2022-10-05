@@ -32,6 +32,7 @@ export const GlobalStyle = createGlobalStyle`
    --error:#EB5757;
 
    // cores base
+   --black: #000000;
    --black1: #1D1D1D;
    --black2:#282828;
    --background:#F4FBFA;
@@ -39,6 +40,7 @@ export const GlobalStyle = createGlobalStyle`
    --aba:#C2D3D7;
 
    // Tons de cinza
+   --gray: #767676;
    --gray1: #333333;
    --gray2:#4F4F4F;
    --gray3:#828282;
