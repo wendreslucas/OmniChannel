@@ -15,7 +15,11 @@ export const CardEspera = () => {
       </DivUser>
       <DivButton>
         <FaWhatsapp fontSize={22} />
-        <Button />
+        <Button
+          backgroundColor="var(--primary)"
+          color="var(--white)"
+          Text="Iniciar"
+        />
       </DivButton>
     </Container>
   );

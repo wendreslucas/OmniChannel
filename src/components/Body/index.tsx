@@ -1,13 +1,17 @@
 import React from 'react';
-import { Container } from './styles';
+import { Container, Div } from './styles';
 import { HeaderBody } from './HeaderBody/index';
 import { Chat } from './Chat/index';
+import PanelSendMessage from './PanelSendMessage/index';
 
 export const Body = () => {
   return (
     <Container>
-      <HeaderBody />
-      <Chat />
+      <Div>
+        <HeaderBody />
+        <Chat />
+      </Div>
+      <PanelSendMessage />
     </Container>
   );
 };

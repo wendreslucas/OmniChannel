@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const StyledButton = styled.button`
-  background-color: var(--primary);
+  background-color: ${props => props.backgroundColor};
   border-radius: 8px;
   display: flex;
   flex-direction: row;
@@ -15,7 +15,7 @@ export const StyledButton = styled.button`
 `;
 
 export const TextButton = styled.span`
-  color: var(--white);
+  color: ${props => props.color};
   font-family: 'Raleway';
   font-style: normal;
   font-weight: 700;
