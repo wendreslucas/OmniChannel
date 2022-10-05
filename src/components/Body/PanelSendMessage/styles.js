@@ -16,16 +16,3 @@ export const Container = styled.div`
   align-self: stretch;
   flex-grow: 0;
 `;
-
-// export const Emojis styled.div`
-
-// `
-// export const Anexo styled.div`
-
-// `
-// export const InputSendMessage styled.div`
-
-// `
-// export const ButtonSendMessage styled.div`
-
-// `
