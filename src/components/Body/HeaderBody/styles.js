@@ -70,7 +70,7 @@ export const LeftContainer = styled.div`
   display: flex;
   justify-content: space-between;
 
-  width: 138px;
+  width: 145px;
 `;
 
 export const DivInfo = styled.div`

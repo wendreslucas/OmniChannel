@@ -37,7 +37,7 @@ export const HeaderBody = () => {
         <LeftContainer>
           <DivInfo>
             <Text lineHeight="22px" fontSize="16px" color="var(--primary)">
-              Número ANS
+              Protocolo ANS
             </Text>
             <p>34665-9</p>
           </DivInfo>
