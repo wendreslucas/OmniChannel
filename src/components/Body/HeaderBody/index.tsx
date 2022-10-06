@@ -20,10 +20,10 @@ export const HeaderBody = () => {
       <Container>
         <RigthContainer>
           <DivIconSms active={true}>
-            <FaWhatsapp fontSize={22} />
+            <FaWhatsapp fontSize={22} color="var(--primary)" />
           </DivIconSms>
           <DivEmail active={false}>
-            <MdOutlineEmail fontSize={22} />
+            <MdOutlineEmail fontSize={22} color="var(--primary)" />
           </DivEmail>
           <DivDuration>
             <Text
@@ -34,8 +34,14 @@ export const HeaderBody = () => {
             >
               Duração
             </Text>
-            <p>05:21:22</p>
-            {/* <Subtitle fontSize="16px" Text="05:21:22" /> */}
+            <Text
+              weight="700"
+              lineHeight="25.2px"
+              fontSize="16px"
+              color="var(--primary)"
+            >
+              05:21:22
+            </Text>
           </DivDuration>
         </RigthContainer>
 
@@ -49,9 +55,16 @@ export const HeaderBody = () => {
             >
               Protocolo ANS
             </Text>
-            <p>34665-9</p>
+            <Text
+              weight="700"
+              lineHeight="25.2px"
+              fontSize="16px"
+              color="var(--primary)"
+            >
+              34665-9
+            </Text>
           </DivInfo>
-          <MdOutlineSearch fontSize={22} color={''} />
+          <MdOutlineSearch fontSize={22} color="var(--primary)" />
         </LeftContainer>
       </Container>
     </Box>

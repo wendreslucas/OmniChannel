@@ -24,7 +24,7 @@ export const Card = (props: CardProps) => {
       {/*  <date/> */}
       <DivInfo>
         <DateTime>Ontem</DateTime>
-        <FaWhatsapp fontSize={20} />
+        <FaWhatsapp fontSize={20} color="var(--primary)" />
       </DivInfo>
     </Container>
   );

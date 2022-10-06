@@ -8,8 +8,8 @@ import InputSendMessage from './../../Input/Input/index';
 const PanelSendMessage: React.FC = () => {
   return (
     <Container>
-      <BsEmojiSmile fontSize={24} />
-      <FiPaperclip fontSize={24} />
+      <BsEmojiSmile fontSize={24} color="var(--gray)" />
+      <FiPaperclip fontSize={24} color="var(--primary)" />
       <InputSendMessage />
       <Button
         backgroundColor="var(--secondary)"

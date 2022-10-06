@@ -19,7 +19,7 @@ export const CardEspera = () => {
         </Text>
       </DivUser>
       <DivButton>
-        <FaWhatsapp fontSize={22} />
+        <FaWhatsapp fontSize={22} color="var(--primary)" />
         <Button
           backgroundColor="var(--primary)"
           color="var(--white)"

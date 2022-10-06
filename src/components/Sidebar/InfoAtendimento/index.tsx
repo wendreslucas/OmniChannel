@@ -34,15 +34,15 @@ export const InfoAtendimento = () => {
         <Value>137.550.890-20</Value>
       </Aling>
       <Aling>
-        <MdEmail fontSize={28} />
+        <MdEmail fontSize={28} color="var(--primary)" />
         <Value>wendreslucas@gmail.com</Value>
       </Aling>
       <Aling>
-        <IoMdCall fontSize={28} />
+        <IoMdCall fontSize={28} color="var(--primary)" />
         <Value>+55 98456-1283</Value>
       </Aling>
       <Aling>
-        <FaWhatsapp fontSize={28} />
+        <FaWhatsapp fontSize={28} color="var(--primary)" />
         <Value> +55 98862-4326</Value>
       </Aling>
     </Box>
