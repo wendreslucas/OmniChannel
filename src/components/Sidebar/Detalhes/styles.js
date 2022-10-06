@@ -54,3 +54,11 @@ export const ContainerText = styled.div`
   align-self: stretch;
   flex-grow: 0;
 `;
+
+export const Divider = styled.div`
+  border: 0;
+  border-bottom: 1px solid var(--secondary);
+
+  margin: 26px 0 26px 0;
+  width: 216px;
+`;
