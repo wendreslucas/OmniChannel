@@ -6,7 +6,7 @@ export const Container = styled.aside`
   align-items: flex-start;
   padding: 0px;
 
-  width: 380px;
+  width: 280px;
 
   background: #ffffff;
   /* Shadow 1 */

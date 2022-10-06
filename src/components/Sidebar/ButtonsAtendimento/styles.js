@@ -43,6 +43,8 @@ export const ButtonAgendar = styled.div`
   order: 0;
   align-self: stretch;
   flex-grow: 0;
+
+  cursor: pointer;
 `;
 
 export const Span = styled.span`
@@ -78,6 +80,8 @@ export const ButtonFinalizar = styled.div`
 
   background: #a2d6d3;
   border-radius: 8px;
+
+  cursor: pointer;
 
   /* Inside auto layout */
 
