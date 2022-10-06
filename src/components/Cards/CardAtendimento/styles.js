@@ -1,4 +1,5 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
+import { MdOutlineEmail, FaWhatsapp } from '../../../styles/Icons';
 
 export const Container = styled.div`
   align-items: center;
@@ -40,7 +41,8 @@ export const UserName = styled.span`
 export const DivInfo = styled.div`
   display: flex;
   justify-content: space-between;
-  width: 85px;
+  /* width: 85px; */
+  width: ${props => (props.active ? '85px' : '110px')};
 `;
 
 export const DateTime = styled.span`
@@ -49,4 +51,18 @@ export const DateTime = styled.span`
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
+`;
+
+export const iconCss = css`
+  color: var(--primary);
+  font-size: 24px;
+`;
+
+export const WhatsappIcon = styled(FaWhatsapp)`
+  ${iconCss}
+  color: var(--primary);
+`;
+
+export const EmailIcon = styled(MdOutlineEmail)`
+  ${iconCss}
 `;

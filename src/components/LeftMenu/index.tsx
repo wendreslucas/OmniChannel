@@ -65,7 +65,8 @@ export const LeftMenu = () => {
           <Divider width="200px" />
         </SubDivision>
         <Card active={true} />
-
+        <Card active={false} />
+        <Card active={false} />
         <SubDivision>
           <ContainerSubtitle>
             <Text

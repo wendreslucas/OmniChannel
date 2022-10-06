@@ -1,7 +1,6 @@
 import React from 'react';
 import { Container, Box, ContainerText, Divider } from './styles';
 import { DadosHistorico } from '../DadosHistorico/index';
-
 import { Text } from './../../Typography/Text/index';
 
 export const DetalhesAtendimento = () => {

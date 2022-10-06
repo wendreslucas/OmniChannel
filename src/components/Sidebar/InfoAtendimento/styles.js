@@ -1,4 +1,5 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
+import { MdEmail, IoMdCall, FaWhatsapp } from '../../../styles/Icons';
 
 export const Box = styled.div`
   display: flex;
@@ -25,26 +26,32 @@ export const Value = styled.span`
   width: 181px;
   height: 20px;
   padding-left: 8px;
-
-  /* Small Text Regular */
-
   font-family: 'Raleway';
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
-  /* identical to box height, or 140% */
-
   display: flex;
   align-items: center;
-
-  /* Gray */
-
   color: #767676;
-
-  /* Inside auto layout */
-
   flex: none;
   order: 1;
   flex-grow: 1;
+`;
+
+const iconCss = css`
+  flex-shrink: 0;
+  font-size: 28px;
+  color: var(--primary);
+`;
+
+export const EmailIcon = styled(MdEmail)`
+  ${iconCss}
+`;
+
+export const CallIcon = styled(IoMdCall)`
+  ${iconCss}
+`;
+export const WhatsappIcon = styled(FaWhatsapp)`
+  ${iconCss}
 `;

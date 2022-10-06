@@ -1,8 +1,5 @@
 import React from 'react';
-import { Box, Aling, Value } from './styles';
-import { MdEmail } from 'react-icons/md';
-import { IoMdCall } from 'react-icons/io';
-import { FaWhatsapp } from 'react-icons/fa';
+import { Box, Aling, Value, EmailIcon, CallIcon, WhatsappIcon } from './styles';
 import { Text } from './../../Typography/Text/index';
 
 export const InfoAtendimento = () => {
@@ -34,15 +31,15 @@ export const InfoAtendimento = () => {
         <Value>137.550.890-20</Value>
       </Aling>
       <Aling>
-        <MdEmail fontSize={28} color="var(--primary)" />
+        <EmailIcon />
         <Value>wendreslucas@gmail.com</Value>
       </Aling>
       <Aling>
-        <IoMdCall fontSize={28} color="var(--primary)" />
+        <CallIcon />
         <Value>+55 98456-1283</Value>
       </Aling>
       <Aling>
-        <FaWhatsapp fontSize={28} color="var(--primary)" />
+        <WhatsappIcon />
         <Value> +55 98862-4326</Value>
       </Aling>
     </Box>

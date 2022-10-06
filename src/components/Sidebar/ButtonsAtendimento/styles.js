@@ -1,4 +1,5 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
+import { IoMdCalendar, MdPowerSettingsNew } from '../../../styles/Icons';
 
 export const Container = styled.div`
   display: flex;
@@ -7,10 +8,8 @@ export const Container = styled.div`
   align-items: center;
   padding: 24px 0px 0px;
   gap: 10px;
-
   width: 216px;
   height: 122px;
-
   flex: none;
   order: 1;
   align-self: stretch;
@@ -19,9 +18,6 @@ export const Container = styled.div`
 
 export const ButtonAgendar = styled.div`
   box-sizing: border-box;
-
-  /* Auto layout */
-
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -32,19 +28,33 @@ export const ButtonAgendar = styled.div`
   width: 216px;
   height: 44px;
 
-  /* Colors/Primary */
-
-  border: 1px solid #03303b;
+  border: 1px solid var(--primary);
   border-radius: 8px;
-
-  /* Inside auto layout */
-
   flex: none;
   order: 0;
   align-self: stretch;
   flex-grow: 0;
+  transition: ease-in-out 0.2s;
 
-  cursor: pointer;
+  &:hover {
+    background: linear-gradient(
+        0deg,
+        rgba(255, 255, 255, 0.8),
+        rgba(255, 255, 255, 0.8)
+      ),
+      var(--primary);
+    cursor: pointer;
+  }
+
+  &:active {
+    background: linear-gradient(
+        0deg,
+        rgba(255, 255, 255, 0.6),
+        rgba(255, 255, 255, 0.6)
+      ),
+      var(--primary);
+    border-radius: 8px;
+  }
 `;
 
 export const Span = styled.span`
@@ -58,7 +68,7 @@ export const Span = styled.span`
   align-items: center;
   text-align: center;
 
-  color: #03303b;
+  color: var(--primary);
 
   flex: none;
   order: 1;
@@ -76,16 +86,30 @@ export const ButtonFinalizar = styled.div`
   width: 211px;
   height: 44px;
 
-  /* Colors/Secondary */
-
-  background: #a2d6d3;
+  background: var(--secondary);
   border-radius: 8px;
-
   cursor: pointer;
-
-  /* Inside auto layout */
-
   flex: none;
   order: 1;
   flex-grow: 0;
+  transition: ease-in-out 0.2s;
+
+  &:hover {
+    opacity: 0.7;
+    border: 1px solid var(--primary);
+    border-radius: 8px;
+  }
+`;
+
+const iconCss = css`
+  flex-shrink: 0;
+  font-size: 22px;
+  color: var(--primary);
+`;
+
+export const CalendarIcon = styled(IoMdCalendar)`
+  ${iconCss}
+`;
+export const PowerIcon = styled(MdPowerSettingsNew)`
+  ${iconCss}
 `;

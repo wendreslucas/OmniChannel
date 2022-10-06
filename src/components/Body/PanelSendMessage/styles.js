@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Button } from '../../Button';
 
 export const Container = styled.div`
   display: flex;
@@ -15,4 +16,8 @@ export const Container = styled.div`
   order: 1;
   align-self: stretch;
   flex-grow: 0;
+`;
+
+export const ButtonEnviar = styled(Button)`
+  padding: 6px 17px;
 `;

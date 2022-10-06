@@ -34,4 +34,10 @@ export const StyledSpan = styled.span`
   flex: none;
   order: 0;
   flex-grow: 0;
+
+  transition: ease-in-out 0.2s;
+  &:hover {
+    cursor: pointer;
+    opacity: 0.8;
+  }
 `;

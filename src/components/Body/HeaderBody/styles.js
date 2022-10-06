@@ -1,4 +1,9 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
+import {
+  FaWhatsapp,
+  MdOutlineEmail,
+  MdOutlineSearch,
+} from '../../../styles/Icons';
 
 export const Box = styled.div`
   background-color: #a9bec3;
@@ -36,7 +41,11 @@ export const DivIconSms = styled.div`
   background: ${props => (props.active ? 'var(--background)' : 'var(--aba)')};
   /* background: var(--background); */
   border-radius: 8px 8px 0px 0px;
-  cursor: pointer;
+  transition: ease-in-out 0.2s;
+  &:hover {
+    cursor: pointer;
+    opacity: 0.8;
+  }
 `;
 
 export const DivEmail = styled.div`
@@ -53,7 +62,11 @@ export const DivEmail = styled.div`
   background: ${props => (props.active ? 'var(--background)' : 'var(--aba)')};
   border-radius: 8px 8px 0px 0px;
 
-  cursor: pointer;
+  transition: ease-in-out 0.2s;
+  &:hover {
+    cursor: pointer;
+    opacity: 0.8;
+  }
 `;
 
 export const DivDuration = styled.div`
@@ -80,4 +93,26 @@ export const DivInfo = styled.div`
   height: 19px;
   justify-content: center;
   /* width: 69px; */
+`;
+
+const iconCss = css`
+  flex-shrink: 0;
+  font-size: 22px;
+  color: var(--primary);
+`;
+
+export const WhatsappIcon = styled(FaWhatsapp)`
+  ${iconCss}
+`;
+export const EmailIcon = styled(MdOutlineEmail)`
+  ${iconCss}
+`;
+
+export const SearchIcon = styled(MdOutlineSearch)`
+  ${iconCss}
+  transition: ease-in-out 0.2s;
+  &:hover {
+    cursor: pointer;
+    opacity: 0.8;
+  }
 `;

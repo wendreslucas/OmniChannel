@@ -17,14 +17,20 @@ import { BsCalendar, BsCheck, BsFillCheckCircleFill } from 'react-icons/bs';
 import { IoMdCall } from 'react-icons/io';
 import { MdKeyboardArrowDown } from 'react-icons/md';
 import { Text } from '../Typography/Text';
+import { useNavigate } from 'react-router-dom';
 
 const pages = ['Scripts', 'Agendamentos', 'Ligar'];
 
 export const Header = () => {
+  const navigate = useNavigate();
+
+  function handleHomePage() {
+    navigate('/');
+  }
   return (
     <Container>
       <RightContainer>
-        <Logo width={40} height={40} />
+        <Logo width={40} height={40} onClick={handleHomePage} />
         <TbMenu2 fontSize={47} color="var(--secondary)" />
       </RightContainer>
 

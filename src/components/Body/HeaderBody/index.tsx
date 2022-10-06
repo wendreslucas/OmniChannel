@@ -8,9 +8,10 @@ import {
   DivDuration,
   LeftContainer,
   DivInfo,
+  WhatsappIcon,
+  EmailIcon,
+  SearchIcon,
 } from './styles';
-import { FaWhatsapp } from 'react-icons/fa';
-import { MdOutlineEmail, MdOutlineSearch } from 'react-icons/md';
 
 import { Text } from '../../Typography/Text';
 
@@ -20,10 +21,10 @@ export const HeaderBody = () => {
       <Container>
         <RigthContainer>
           <DivIconSms active={true}>
-            <FaWhatsapp fontSize={22} color="var(--primary)" />
+            <WhatsappIcon />
           </DivIconSms>
-          <DivEmail active={false}>
-            <MdOutlineEmail fontSize={22} color="var(--primary)" />
+          <DivEmail>
+            <EmailIcon />
           </DivEmail>
           <DivDuration>
             <Text
@@ -64,7 +65,7 @@ export const HeaderBody = () => {
               34665-9
             </Text>
           </DivInfo>
-          <MdOutlineSearch fontSize={22} color="var(--primary)" />
+          <SearchIcon />
         </LeftContainer>
       </Container>
     </Box>

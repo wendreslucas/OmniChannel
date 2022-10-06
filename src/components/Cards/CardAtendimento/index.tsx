@@ -6,8 +6,11 @@ import {
   DivUser,
   UserImage,
   UserName,
+  WhatsappIcon,
+  EmailIcon,
 } from './styles';
-import { FaWhatsapp } from 'react-icons/fa';
+
+import { Counter } from './../../Counter/index';
 
 interface CardProps {
   active: boolean;
@@ -22,9 +25,16 @@ export const Card = (props: CardProps) => {
         <UserName>Emanuelle Costa</UserName>
       </DivUser>
       {/*  <date/> */}
-      <DivInfo>
-        <DateTime>Ontem</DateTime>
-        <FaWhatsapp fontSize={20} color="var(--primary)" />
+      <DivInfo active={active}>
+        <DateTime>12:13</DateTime>
+        {active ? (
+          <WhatsappIcon />
+        ) : (
+          <>
+            <EmailIcon />
+            <Counter Text="2" />
+          </>
+        )}
       </DivInfo>
     </Container>
   );

@@ -55,5 +55,10 @@ export const GlobalStyle = createGlobalStyle`
    --heading5: 24px;
    --heading6: 20px;
 
+   --primaryHover: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+      var(--primary);
+
+   --secondaryHover: opacity:0.7 ;
+
  }
 `;
