@@ -5,7 +5,7 @@ export const Container = styled.div`
   margin-bottom: 8px;
   /* padding: ${props => props.padding}; */
   padding: 24px 0;
-  width: 346px;
+  width: 288px;
 `;
 
 export const StyledSubtitle = styled.h2`

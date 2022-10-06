@@ -5,8 +5,6 @@ import { IoMdCall } from 'react-icons/io';
 import { FaWhatsapp } from 'react-icons/fa';
 import { Text } from './../../Typography/Text/index';
 
-import { ButtonsAtendimento } from './../ButtonsAtendimento/index';
-
 export const InfoAtendimento = () => {
   return (
     <Box>

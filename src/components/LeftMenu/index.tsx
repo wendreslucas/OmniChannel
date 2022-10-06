@@ -6,6 +6,7 @@ import {
   Divider,
   Div,
   Section,
+  ContainerSubtitle,
 } from './styles';
 import { Title } from './../Typography/Title/index';
 import { Subtitle } from './../Typography/Subtitle/index';
@@ -15,6 +16,7 @@ import { Card } from './../Cards/CardAtendimento/index';
 
 import { Counter } from '../Counter';
 import { CardEspera } from './../Cards/CardEspera/index';
+import { Text } from './../Typography/Text/index';
 
 export const LeftMenu = () => {
   const [search, setInputSearch] = useState('');
@@ -26,7 +28,16 @@ export const LeftMenu = () => {
   return (
     <Container>
       <Title />
-      <Subtitle fontSize="14px" Text="Buscar atendimento" />
+      <ContainerSubtitle>
+        <Text
+          lineHeight="19.6px"
+          weight="700"
+          color="var(--primary)"
+          fontSize="14px"
+        >
+          Buscar atendimento
+        </Text>
+      </ContainerSubtitle>
       <StyledInput className={'inputWithIcon'}>
         <Input
           type="text"
@@ -41,14 +52,32 @@ export const LeftMenu = () => {
 
       <Content>
         <SubDivision>
-          <Subtitle fontSize="16px" Text="EM ANDAMENTO" />
-          <Divider width="500px" />
+          <ContainerSubtitle>
+            <Text
+              lineHeight="25px"
+              weight="700"
+              color="var(--primary)"
+              fontSize="16px"
+            >
+              EM ANDAMENTO
+            </Text>
+          </ContainerSubtitle>
+          <Divider width="200px" />
         </SubDivision>
         <Card active={true} />
 
         <SubDivision>
-          <Subtitle fontSize="16px" Text="EM ESPERA" />
-          <Divider width="780px" />
+          <ContainerSubtitle>
+            <Text
+              lineHeight="25px"
+              weight="700"
+              color="var(--primary)"
+              fontSize="16px"
+            >
+              EM ESPERA
+            </Text>
+          </ContainerSubtitle>
+          <Divider width="238px" />
         </SubDivision>
         <Section>
           <Subtitle fontSize="16px" Text="Campanha Saúde e vida" />

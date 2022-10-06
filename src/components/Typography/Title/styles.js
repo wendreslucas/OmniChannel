@@ -6,6 +6,7 @@ export const StyledTitle = styled.h1`
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
-  gap: 24px;
+
   line-height: 26px;
+  padding-bottom: 24px;
 `;

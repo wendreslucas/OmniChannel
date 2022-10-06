@@ -34,13 +34,20 @@ export const SubDivision = styled.div`
   align-items: baseline;
 `;
 
-export const Divider = styled.hr`
+export const Divider = styled.div`
   border: 0;
   border-bottom: 1px solid var(--secondary);
-  /* width: 420px; */
   width: ${props => props.width};
 `;
 
 export const Div = styled.div`
   display: flex;
+`;
+
+export const ContainerSubtitle = styled.div`
+  height: 20px;
+  margin-bottom: 8px;
+
+  padding: 15px 8px;
+  /* width: 145px; */
 `;
