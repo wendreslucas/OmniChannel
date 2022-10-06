@@ -5,7 +5,7 @@ export const Container = styled.aside`
   box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.1);
   padding: 32px 32px 8px 32px;
   width: 410px;
-  height: 86.5vh;
+  height: 927px;
   overflow: hidden;
 `;
 
@@ -14,7 +14,7 @@ export const Content = styled.div`
   flex-direction: column;
   gap: 1rem;
 
-  height: 68vh;
+  height: 98vh;
   max-height: 100%;
   overflow: auto;
 
