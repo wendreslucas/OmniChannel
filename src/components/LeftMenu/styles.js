@@ -1,4 +1,5 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
+import { MdKeyboardArrowUp, MdOutlineSearch } from '../../styles/Icons';
 
 export const Container = styled.aside`
   background-color: var(--white);
@@ -27,6 +28,9 @@ export const Content = styled.div`
 export const Section = styled.div`
   display: flex;
   align-items: center;
+  justify-content: space-between;
+
+  padding: 16px 0 24px 0%;
 `;
 
 export const SubDivision = styled.div`
@@ -37,7 +41,7 @@ export const SubDivision = styled.div`
 export const Divider = styled.div`
   border: 0;
   border-bottom: 1px solid var(--secondary);
-  width: ${props => props.width};
+  width: ${(props) => props.width};
 `;
 
 export const Div = styled.div`
@@ -51,3 +55,28 @@ export const ContainerSubtitle = styled.div`
   padding: 15px 8px;
   /* width: 145px; */
 `;
+
+const cssIcons = css`
+  font-size: 26px;
+  color: var(--primary);
+`;
+
+export const ArrowUpIcon = styled(MdKeyboardArrowUp)`
+  cursor: pointer;
+  ${cssIcons};
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:focus-visible {
+    transform: rotate(180deg);
+  }
+`;
+export const SearchIcon = styled(MdOutlineSearch)`
+  ${cssIcons};
+`;
+
+export const CardsSaude = styled.div``;
+
+export const CardsEnergia = styled.div``;

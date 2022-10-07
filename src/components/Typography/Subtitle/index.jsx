@@ -1,12 +1,7 @@
 import React from 'react';
 import { Container, StyledSubtitle } from './styles';
 
-interface ISubtitle {
-  Text: string;
-  fontSize: string;
-}
-
-export const Subtitle = (props: ISubtitle) => {
+export const Subtitle = props => {
   const { Text, fontSize } = props;
 
   return (

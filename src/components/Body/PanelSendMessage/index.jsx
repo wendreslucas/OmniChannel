@@ -1,17 +1,17 @@
 import React from 'react';
-import { Button } from '../../Button';
+import { ButtonEnviar } from '../../Body/PanelSendMessage/ButtonEnviar';
 import { Container } from './styles';
 import { BsEmojiSmile } from 'react-icons/bs';
 import { FiPaperclip } from 'react-icons/fi';
-import InputSendMessage from './../../Input/Input/index';
+import InputSendMessage from '../../Input/Input/index';
 
-const PanelSendMessage: React.FC = () => {
+export const PanelSendMessage = () => {
   return (
     <Container>
       <BsEmojiSmile fontSize={24} color="var(--gray)" />
       <FiPaperclip fontSize={24} color="var(--primary)" />
       <InputSendMessage />
-      <Button
+      <ButtonEnviar
         backgroundColor="var(--secondary)"
         color="var(--primary)"
         Text="Enviar"
@@ -19,5 +19,3 @@ const PanelSendMessage: React.FC = () => {
     </Container>
   );
 };
-
-export default PanelSendMessage;

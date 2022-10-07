@@ -1,13 +1,7 @@
 import React from 'react';
 import { StyledButton, TextButton } from './styles';
 
-interface IButtonProps {
-  Text: string;
-  backgroundColor: string;
-  color: string;
-}
-
-export const Button = (props: IButtonProps) => {
+export const ButtonEnviar = (props) => {
   const { Text, backgroundColor, color } = props;
   return (
     <StyledButton backgroundColor={backgroundColor}>

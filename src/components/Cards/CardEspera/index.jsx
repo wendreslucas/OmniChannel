@@ -1,8 +1,8 @@
 import React from 'react';
 import { Container, DivButton, DivUser, UserImage } from './styles';
 import { FaWhatsapp } from 'react-icons/fa';
-import { Text } from './../../Typography/Text';
-import { Button } from './../../Button/index';
+import { Text } from '../../Typography/Text';
+import { Button } from '../../Button/index';
 
 export const CardEspera = () => {
   return (

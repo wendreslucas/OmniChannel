@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import media from '../../styles/Media';
 
 export const Container = styled.main`
   background-color: var(--background);

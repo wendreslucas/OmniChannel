@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Box, Aling, Value, EmailIcon, CallIcon, WhatsappIcon } from './styles';
-import { Text } from './../../Typography/Text/index';
+import { Text } from '../../Typography/Text/index';
 
 export const InfoAtendimento = () => {
   return (

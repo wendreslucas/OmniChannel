@@ -5,4 +5,8 @@ export { FaWhatsapp } from 'react-icons/fa';
 export { IoMdCalendar } from 'react-icons/io';
 export { MdPowerSettingsNew } from 'react-icons/md';
 
-export { MdOutlineEmail, MdOutlineSearch } from 'react-icons/md';
+export {
+  MdOutlineEmail,
+  MdOutlineSearch,
+  MdKeyboardArrowUp,
+} from 'react-icons/md';

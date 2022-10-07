@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import media from './../../styles/Media';
 
 export const Container = styled.header`
   align-items: center;
@@ -38,7 +39,7 @@ export const ContainerOption = styled.div`
   padding: 8px 16px;
   gap: 8px;
 
-  width: ${props => props.width};
+  width: ${(props) => props.width};
   height: 50px;
 
   /* Inside auto layout */
