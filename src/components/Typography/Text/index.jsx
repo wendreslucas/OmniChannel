@@ -1,15 +1,7 @@
 import React from 'react';
 import { Typography } from './styles';
 
-interface ITextProps {
-  fontSize: string;
-  lineHeight: string;
-  color: string;
-  children: string;
-  weight: string;
-}
-
-export const Text = (props: ITextProps) => {
+export const Text = (props) => {
   const { children, color, fontSize, lineHeight, weight } = props;
   return (
     <Typography
