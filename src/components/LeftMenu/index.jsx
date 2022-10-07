@@ -18,8 +18,9 @@ import { Counter } from '../Counter';
 import { CardEspera } from '../Cards/CardEspera/index';
 import { Text } from '../Typography/Text/index';
 import { apiAtendimentos } from '../../services/api';
-import { CardList } from './../Cards/Lista/index';
 import { CardEstatico } from './../Cards/CardEstático/index';
+import { ListaAtendimento } from './../Cards/ListaAtendimento/index';
+import { ListaEspera } from './../Cards/ListaEspera/index';
 
 export const LeftMenu = (props) => {
   const { active } = props;
@@ -88,7 +89,7 @@ export const LeftMenu = (props) => {
           <Divider width="200px" />
         </SubDivision>
         <CardEstatico active={true} />
-        <CardList />
+        <ListaAtendimento />
         <SubDivision>
           <ContainerSubtitle>
             <Text
@@ -118,7 +119,7 @@ export const LeftMenu = (props) => {
         </Section>
         {cardSaudeVisible && (
           <CardsSaude style={{ transition: 'all 0.5s ease' }}>
-            <CardEspera />
+            <ListaEspera />
           </CardsSaude>
         )}
         <Section>
@@ -137,9 +138,7 @@ export const LeftMenu = (props) => {
         </Section>
         {cardEnergiaVisible && (
           <CardsEnergia style={{ transition: 'all 0.5s ease' }}>
-            <CardEspera />
-            <CardEspera />
-            <CardEspera />
+            <ListaEspera />
           </CardsEnergia>
         )}
       </Content>

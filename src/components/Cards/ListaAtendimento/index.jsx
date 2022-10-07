@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { apiAtendimentos } from './../../../services/api';
 import { CardAtendimento } from './../CardAtendimento/index';
 
-export const CardList = () => {
+export const ListaAtendimento = () => {
   const [atendimentos, setAtendimentos] = useState([]);
 
   useEffect(() => {
