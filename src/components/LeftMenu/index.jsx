@@ -114,7 +114,6 @@ export const LeftMenu = () => {
         {cardSaudeVisible && (
           <CardsSaude style={{ transition: 'all 0.5s ease' }}>
             <ListaEspera />
-            <CardEstatico active={false} />
           </CardsSaude>
         )}
         <Section>
@@ -134,7 +133,6 @@ export const LeftMenu = () => {
         {cardEnergiaVisible && (
           <CardsEnergia style={{ transition: 'all 0.5s ease' }}>
             <ListaEspera />
-            <CardEstatico active={false} />
           </CardsEnergia>
         )}
       </Content>
