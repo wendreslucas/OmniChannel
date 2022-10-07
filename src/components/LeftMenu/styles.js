@@ -15,7 +15,7 @@ export const Content = styled.div`
   flex-direction: column;
   gap: 1rem;
 
-  height: 98vh;
+  height: 90vh;
   max-height: 100%;
   overflow: auto;
 
@@ -63,14 +63,15 @@ const cssIcons = css`
 
 export const ArrowUpIcon = styled(MdKeyboardArrowUp)`
   cursor: pointer;
+  float: right;
+  transform: rotate(0deg);
+  overflow: hidden;
+  transition: all 0.3s ease-out;
+  transform: ${(props) => (props.rotate ? `rotate(180deg)` : '')};
   ${cssIcons};
 
   &:hover {
     opacity: 0.7;
-  }
-
-  &:focus-visible {
-    transform: rotate(180deg);
   }
 `;
 export const SearchIcon = styled(MdOutlineSearch)`

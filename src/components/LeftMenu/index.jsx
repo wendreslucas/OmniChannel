@@ -1,4 +1,5 @@
 import React, { useEffect, useState, useCallback } from 'react';
+
 import {
   Container,
   Content,
@@ -15,7 +16,6 @@ import {
 import { Title } from '../Typography/Title/index';
 import { StyledInput, Input } from '../Input/InputSearch/styles';
 import { Counter } from '../Counter';
-import { CardEspera } from '../Cards/CardEspera/index';
 import { Text } from '../Typography/Text/index';
 import { apiAtendimentos } from '../../services/api';
 import { CardEstatico } from './../Cards/CardEstático/index';
@@ -23,18 +23,22 @@ import { ListaAtendimento } from './../Cards/ListaAtendimento/index';
 import { ListaEspera } from './../Cards/ListaEspera/index';
 
 export const LeftMenu = (props) => {
-  const { active } = props;
-
   const [search, setInputSearch] = useState('');
   const [atendimentos, setAtendimentos] = useState([]);
+  const [rotateSaude, setRotateSaude] = useState(false);
+  const [rotateEnergia, setRotateEnergia] = useState(false);
 
   const [cardSaudeVisible, setcardSaudeVisible] = useState(true);
-  const handeCardSaude = useCallback(() => {
+
+  const handleCardSaude = useCallback(() => {
+    setRotateSaude((prevState) => !prevState);
     setcardSaudeVisible((prevVisible) => !prevVisible);
   }, [cardSaudeVisible]);
 
   const [cardEnergiaVisible, setCardEnergiaVisible] = useState(true);
+
   const handleCardEnergia = useCallback(() => {
+    setRotateEnergia((prevState) => !prevState);
     setCardEnergiaVisible((prevVisible) => !prevVisible);
   }, [cardEnergiaVisible]);
 
@@ -114,7 +118,7 @@ export const LeftMenu = (props) => {
           </Text>
           <Div>
             <Counter Text="2" />
-            <ArrowUpIcon onClick={handeCardSaude} />
+            <ArrowUpIcon rotate={rotateSaude} onClick={handleCardSaude} />
           </Div>
         </Section>
         {cardSaudeVisible && (
@@ -133,7 +137,8 @@ export const LeftMenu = (props) => {
           </Text>
           <Div>
             <Counter Text="2" />
-            <ArrowUpIcon onClick={handleCardEnergia} />
+
+            <ArrowUpIcon rotate={rotateEnergia} onClick={handleCardEnergia} />
           </Div>
         </Section>
         {cardEnergiaVisible && (
