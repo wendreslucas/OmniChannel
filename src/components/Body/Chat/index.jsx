@@ -4,7 +4,6 @@ import {
   MessageList,
   UserMessage,
   BoxMessage,
-  // UserMessage,
   User,
   TextMessageUser,
   HourMessage,

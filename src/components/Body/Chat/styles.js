@@ -1,8 +1,6 @@
 import styled from 'styled-components';
 
-export const Container = styled.div`
-  /* height: 771px; */
-`;
+export const Container = styled.div``;
 
 export const MessageList = styled.ul`
   align-items: flex-end;
@@ -14,19 +12,16 @@ export const MessageList = styled.ul`
 `;
 
 export const UserMessage = styled.li`
-  display: flex;
-  flex-direction: column;
   align-items: flex-start;
-  padding: 16px;
-  gap: 8px;
-
-  margin-bottom: 16px;
-
-  width: 490px;
-  height: auto;
-
+  display: flex;
   background: rgba(194, 211, 215, 0.4);
   border-radius: 0px 8px 8px 8px;
+  flex-direction: column;
+  gap: 8px;
+  height: auto;
+  margin-bottom: 16px;
+  padding: 16px;
+  width: 490px;
 
   flex: none;
   order: 1;
@@ -69,8 +64,6 @@ export const TextMessageUser = styled.span`
 
   color: #000000;
 
-  /* flex: none; */
-  /* order: 1; */
   align-self: stretch;
   flex-grow: 0;
 `;
@@ -78,22 +71,17 @@ export const HourMessage = styled.div`
   color: var(--gray3);
 `;
 
-////////////////////////////////////
-
 export const Message = styled.li`
-  display: flex;
-  flex-direction: column;
   align-items: flex-start;
-  padding: 16px;
-  gap: 8px;
-
-  margin-bottom: 16px;
-
-  width: 490px;
-  height: auto;
-
   background: #fcfcfc;
   border-radius: 8px 0px 8px 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  height: auto;
+  margin-bottom: 16px;
+  padding: 16px;
+  width: 490px;
 
   flex: none;
   order: 0;
@@ -101,21 +89,16 @@ export const Message = styled.li`
 `;
 
 export const MessageAttend = styled.span`
-  width: 408px;
-  height: 20px;
-
+  align-items: center;
+  color: #828282;
+  display: flex;
   font-family: 'Raleway';
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
+  height: 20px;
   line-height: 20px;
-
-  display: flex;
-  align-items: center;
-
-  color: #828282;
-
-  /* Inside auto layout */
+  width: 408px;
 
   flex: none;
   order: 0;
@@ -128,19 +111,8 @@ export const OurTextMessage = styled.span`
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
-  /* or 140% */
 
   display: flex;
   align-items: center;
-
-  /* Black */
-
   color: #000000;
-
-  /* Inside auto layout */
-  /* 
-  flex: none;
-  order: 1;
-  align-self: stretch;
-  flex-grow: 0; */
 `;

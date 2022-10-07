@@ -10,12 +10,17 @@ export const StyledButton = styled.button`
   padding: 16px;
   gap: 10px;
 
-  width: 86px;
   height: 44px;
+  width: 86px;
 
+  transition: ease-in-out 0.2s;
   &:hover {
     background: var(--primaryHover);
     cursor: pointer;
+  }
+
+  &:active {
+    background: #03303b;
   }
 `;
 
