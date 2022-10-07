@@ -1,5 +1,12 @@
-import styled from 'styled-components';
-import media from './../../styles/Media';
+import styled, { css } from 'styled-components';
+import {
+  TbMenu2,
+  MdDescription,
+  BsCalendar,
+  BsCheck,
+  IoMdCall,
+  MdKeyboardArrowDown,
+} from '../../styles/Icons';
 
 export const Container = styled.header`
   align-items: center;
@@ -39,15 +46,20 @@ export const ContainerOption = styled.div`
   padding: 8px 16px;
   gap: 8px;
 
-  width: ${(props) => props.width};
   height: 50px;
-
-  /* Inside auto layout */
+  width: ${(props) => props.width};
 
   flex: none;
   order: 0;
   align-self: stretch;
   flex-grow: 0;
+
+  cursor: pointer;
+  transition: ease-in-out 0.2s;
+
+  &:hover {
+    opacity: 0.8;
+  }
 `;
 
 export const DivImagem = styled.div`
@@ -63,7 +75,6 @@ export const Imagem = styled.img`
   border-radius: 100px;
   border: 1px solid var(--secondary);
   height: 49.78px;
-  /* margin-right: 8px; */
   width: 49.78px;
 `;
 
@@ -72,13 +83,15 @@ export const MenuContainer = styled.div`
   flex-direction: row;
   align-items: center;
   gap: 10px;
-
-  width: 216px;
   height: 50px;
+  width: 216px;
 
-  /* flex: none;
-  order: 3;
-  flex-grow: 0; */
+  cursor: pointer;
+  transition: ease-in-out 0.2s;
+
+  &:hover {
+    opacity: 0.8;
+  }
 `;
 
 export const ContainerText = styled.div`
@@ -87,24 +100,57 @@ export const ContainerText = styled.div`
 `;
 
 export const IconStatus = styled.div`
-  display: flex;
   align-items: center;
-  border-radius: 100%;
-  height: 16.33px;
-  width: 16.33px;
-  box-sizing: border-box;
-
-  position: absolute;
-
-  /* left: 0%;
-  right: 0%;
-  top: 0%;
-  bottom: 0%; */
-
-  /* Colors/Status/Success */
-
   background: #27ae60;
-  /* Colors/Primary */
+  border-radius: 100%;
+  border: 1.5px solid var(--primary);
+  box-sizing: border-box;
+  display: flex;
+  height: 16.33px;
+  position: absolute;
+  width: 16.33px;
+`;
 
-  border: 1.5px solid #03303b;
+const iconCss = css`
+  color: var(--white);
+  cursor: pointer;
+
+  transition: ease-in-out 0.2s;
+
+  &:hover {
+    opacity: 0.8;
+  }
+`;
+
+export const MenuIcon = styled(TbMenu2)`
+  font-size: 47px;
+  color: var(--secondary);
+  cursor: pointer;
+  transition: ease-in-out 0.2s;
+
+  &:hover {
+    opacity: 0.8;
+  }
+`;
+export const ScriptIcon = styled(MdDescription)`
+  ${iconCss};
+  font-size: 22px;
+`;
+export const CalendarioIcon = styled(BsCalendar)`
+  ${iconCss};
+  font-size: 22px;
+`;
+
+export const CallIcon = styled(IoMdCall)`
+  ${iconCss};
+  font-size: 24px;
+`;
+
+export const CheckIcon = styled(BsCheck)`
+  ${iconCss};
+`;
+
+export const ArrowDownIcon = styled(MdKeyboardArrowDown)`
+  ${iconCss};
+  font-size: 22px;
 `;

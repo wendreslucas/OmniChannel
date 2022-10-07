@@ -10,3 +10,9 @@ export {
   MdOutlineSearch,
   MdKeyboardArrowUp,
 } from 'react-icons/md';
+
+export { TbMenu2 } from 'react-icons/tb';
+export { MdDescription } from 'react-icons/md';
+export { BsCalendar, BsCheck, BsFillCheckCircleFill } from 'react-icons/bs';
+
+export { MdKeyboardArrowDown } from 'react-icons/md';
