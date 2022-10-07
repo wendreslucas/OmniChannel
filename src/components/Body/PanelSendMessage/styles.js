@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import { Button } from '../../Button';
+import styled, { css } from 'styled-components';
+import { BsEmojiSmile, FiPaperclip } from '../../../styles/Icons';
 
 export const Container = styled.div`
   display: flex;
@@ -18,6 +18,15 @@ export const Container = styled.div`
   flex-grow: 0;
 `;
 
-export const ButtonEnviar = styled(Button)`
-  padding: 6px 17px;
+const iconCss = css`
+  font-size: 24px;
+`;
+export const EmojiIcon = styled(BsEmojiSmile)`
+  color: var(--gray);
+  ${iconCss};
+`;
+
+export const ClipIcon = styled(FiPaperclip)`
+  ${iconCss};
+  color: var(--primary);
 `;

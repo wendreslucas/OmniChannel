@@ -16,3 +16,6 @@ export { MdDescription } from 'react-icons/md';
 export { BsCalendar, BsCheck, BsFillCheckCircleFill } from 'react-icons/bs';
 
 export { MdKeyboardArrowDown } from 'react-icons/md';
+
+export { BsEmojiSmile } from 'react-icons/bs';
+export { FiPaperclip } from 'react-icons/fi';
