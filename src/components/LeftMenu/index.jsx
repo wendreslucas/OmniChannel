@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useContext } from 'react';
+import React, { useEffect, useContext } from 'react';
 
 import {
   Container,
@@ -127,7 +127,6 @@ export const LeftMenu = () => {
           </Text>
           <Div>
             <Counter Text="2" />
-
             <ArrowUpIcon rotate={rotateEnergia} onClick={handleCardEnergia} />
           </Div>
         </Section>
