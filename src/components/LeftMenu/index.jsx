@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useCallback } from 'react';
+import React, { useEffect, useState, useContext } from 'react';
 
 import {
   Container,
@@ -21,30 +21,20 @@ import { apiAtendimentos } from '../../services/api';
 import { CardEstatico } from './../Cards/CardEstático/index';
 import { ListaAtendimento } from './../Cards/ListaAtendimento/index';
 import { ListaEspera } from './../Cards/ListaEspera/index';
+import { LeftMenuContext } from './../../context/LeftMenuContext';
 
-export const LeftMenu = (props) => {
-  const [search, setInputSearch] = useState('');
-  const [atendimentos, setAtendimentos] = useState([]);
-  const [rotateSaude, setRotateSaude] = useState(false);
-  const [rotateEnergia, setRotateEnergia] = useState(false);
-
-  const [cardSaudeVisible, setcardSaudeVisible] = useState(true);
-
-  const handleCardSaude = useCallback(() => {
-    setRotateSaude((prevState) => !prevState);
-    setcardSaudeVisible((prevVisible) => !prevVisible);
-  }, [cardSaudeVisible]);
-
-  const [cardEnergiaVisible, setCardEnergiaVisible] = useState(true);
-
-  const handleCardEnergia = useCallback(() => {
-    setRotateEnergia((prevState) => !prevState);
-    setCardEnergiaVisible((prevVisible) => !prevVisible);
-  }, [cardEnergiaVisible]);
-
-  function handleInputChange(event) {
-    setInputSearch(event.target.value);
-  }
+export const LeftMenu = () => {
+  const {
+    handleInputChange,
+    handleCardEnergia,
+    handleCardSaude,
+    search,
+    rotateSaude,
+    cardEnergiaVisible,
+    cardSaudeVisible,
+    rotateEnergia,
+    setAtendimentos,
+  } = useContext(LeftMenuContext);
 
   useEffect(() => {
     apiAtendimentos.get('chamados').then((chamados) => {
