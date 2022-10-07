@@ -6,10 +6,10 @@ import {
 } from '../../../styles/Icons';
 
 export const Box = styled.div`
-  background-color: #a9bec3;
+  background-color: #a9bec4;
+  height: 48px;
   padding: 8px 16px 0px;
   width: 716px;
-  height: 48px;
 `;
 
 export const Container = styled.div`
@@ -23,24 +23,22 @@ export const RigthContainer = styled.div`
   align-items: center;
   display: flex;
   justify-content: space-between;
-
   width: 200px;
 `;
 
 export const DivIconSms = styled.div`
+  align-items: center;
+  background: ${(props) => (props.active ? 'var(--background)' : 'var(--aba)')};
+  border-radius: 8px 8px 0px 0px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 8px 16px;
   gap: 8px;
+  justify-content: center;
+  padding: 8px 16px;
 
   width: 56px;
   height: 40px;
 
-  background: ${props => (props.active ? 'var(--background)' : 'var(--aba)')};
-  /* background: var(--background); */
-  border-radius: 8px 8px 0px 0px;
   transition: ease-in-out 0.2s;
   &:hover {
     cursor: pointer;
@@ -49,18 +47,17 @@ export const DivIconSms = styled.div`
 `;
 
 export const DivEmail = styled.div`
+  align-items: center;
+  background: ${(props) => (props.active ? 'var(--background)' : 'var(--aba)')};
+  border-radius: 8px 8px 0px 0px;
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 8px 16px;
   gap: 8px;
+  justify-content: center;
+  padding: 8px 16px;
 
-  width: 56px;
   height: 40px;
-
-  background: ${props => (props.active ? 'var(--background)' : 'var(--aba)')};
-  border-radius: 8px 8px 0px 0px;
+  width: 56px;
 
   transition: ease-in-out 0.2s;
   &:hover {
@@ -92,7 +89,6 @@ export const DivInfo = styled.div`
   flex-direction: column;
   height: 19px;
   justify-content: center;
-  /* width: 69px; */
 `;
 
 const iconCss = css`

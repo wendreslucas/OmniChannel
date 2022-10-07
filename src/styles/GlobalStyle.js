@@ -56,9 +56,9 @@ export const GlobalStyle = createGlobalStyle`
    --heading6: 20px;
 
    --primaryHover: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-      var(--primary);
+      #03303b;
 
-   --secondaryHover: opacity:0.7 ;
+   --secondaryHover:  linear-gradient(0deg, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), #03303B; ;
 
  }
 `;

@@ -10,16 +10,16 @@ import {
   ContainerText,
   DivImagem,
   IconStatus,
+  MenuIcon,
+  ScriptIcon,
+  CalendarioIcon,
+  CallIcon,
+  CheckIcon,
+  ArrowDownIcon,
 } from './styles';
-import { TbMenu2 } from 'react-icons/tb';
-import { MdDescription } from 'react-icons/md';
-import { BsCalendar, BsCheck, BsFillCheckCircleFill } from 'react-icons/bs';
-import { IoMdCall } from 'react-icons/io';
-import { MdKeyboardArrowDown } from 'react-icons/md';
+
 import { Text } from '../Typography/Text';
 import { useNavigate } from 'react-router-dom';
-
-const pages = ['Scripts', 'Agendamentos', 'Ligar'];
 
 export const Header = () => {
   const navigate = useNavigate();
@@ -31,12 +31,12 @@ export const Header = () => {
     <Container>
       <RightContainer>
         <Logo width={40} height={40} onClick={handleHomePage} />
-        <TbMenu2 fontSize={47} color="var(--secondary)" />
+        <MenuIcon />
       </RightContainer>
 
       <LeftContainer>
         <ContainerOption width="117px">
-          <MdDescription fontSize={18} color="var(--white)" />
+          <ScriptIcon />
           <Text
             weight="400"
             fontSize="16px"
@@ -47,7 +47,7 @@ export const Header = () => {
           </Text>
         </ContainerOption>
         <ContainerOption width="179px">
-          <BsCalendar fontSize={22} color="var(--white)" />
+          <CalendarioIcon />
           <Text
             weight="400"
             fontSize="16px"
@@ -58,7 +58,7 @@ export const Header = () => {
           </Text>
         </ContainerOption>
         <ContainerOption width="102px">
-          <IoMdCall fontSize={18} color="var(--white)" />
+          <CallIcon />
           <Text
             weight="400"
             fontSize="16px"
@@ -72,7 +72,7 @@ export const Header = () => {
           <DivImagem>
             <Imagem src="/imagens/image5.png" alt="Foto do atendente" />
             <IconStatus>
-              <BsCheck color="var(--white)" />
+              <CheckIcon />
             </IconStatus>
           </DivImagem>
 
@@ -94,7 +94,7 @@ export const Header = () => {
               Disponível
             </Text>
           </ContainerText>
-          <MdKeyboardArrowDown fontSize={22} color="var(--white)" />
+          <ArrowDownIcon />
         </MenuContainer>
       </LeftContainer>
     </Container>

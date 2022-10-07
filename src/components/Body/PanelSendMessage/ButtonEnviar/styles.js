@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const StyledButton = styled.button`
-  background-color: ${(props) => props.backgroundColor};
+  background: var(--secondary);
   border-radius: 8px;
   display: flex;
   flex-direction: row;
@@ -14,8 +14,10 @@ export const StyledButton = styled.button`
   width: 86px;
 
   transition: ease-in-out 0.2s;
+
   &:hover {
-    background: var(--primaryHover);
+    background: var(--secndaryHover);
+    border: 1px solid var(--primary);
     cursor: pointer;
   }
 

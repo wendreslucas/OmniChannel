@@ -13,7 +13,7 @@ export const Container = styled.div`
   margin-bottom: 8px;
   width: 346px;
 
-  border: ${(props) => (props.active ? '2px solid var(--primary)' : 0)};
+  border: 2px solid var(--primary);
   &:hover {
     cursor: pointer;
   }
