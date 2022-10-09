@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useCallback, useState } from 'react';
 import {
   Container,
   DateTime,
@@ -18,8 +18,12 @@ export const CardAtendimento = (props) => {
   const { nome, dateTime, imagem } = props;
   const [active, setActive] = useState(false);
 
+  const handleActive = useCallback(() => {
+    setActive((prevSate) => !prevSate);
+  });
+
   return (
-    <Container onClick={(e) => setActive((active) => !active)}>
+    <Container onClick={handleActive}>
       <DivUser>
         <UserImage src={imagem} alt="Foto do Usuário" />
         <UserName>{nome}</UserName>

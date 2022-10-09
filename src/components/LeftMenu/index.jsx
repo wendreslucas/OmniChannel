@@ -1,4 +1,4 @@
-import React, { useEffect, useContext } from 'react';
+import React, { useContext, useCallback, useState } from 'react';
 
 import {
   Container,
@@ -17,7 +17,6 @@ import { Title } from '../Typography/Title/index';
 import { StyledInput, Input } from '../Input/InputSearch/styles';
 import { Counter } from '../Counter';
 import { Text } from '../Typography/Text/index';
-import { apiAtendimentos } from '../../services/api';
 import { CardEstatico } from './../Cards/CardEstático/index';
 import { ListaAtendimento } from './../Cards/ListaAtendimento/index';
 import { ListaEspera } from './../Cards/ListaEspera/index';
@@ -33,15 +32,7 @@ export const LeftMenu = () => {
     cardEnergiaVisible,
     cardSaudeVisible,
     rotateEnergia,
-    setAtendimentos,
   } = useContext(LeftMenuContext);
-
-  useEffect(() => {
-    apiAtendimentos.get('chamados').then((chamados) => {
-      setAtendimentos(chamados.data);
-      console.log(chamados.data);
-    });
-  }, []);
 
   return (
     <Container>
@@ -82,7 +73,7 @@ export const LeftMenu = () => {
           </ContainerSubtitle>
           <Divider width="200px" />
         </SubDivision>
-        <CardEstatico active={true} />
+        {/* <CardEstatico active={true} /> */}
         <ListaAtendimento />
         <SubDivision>
           <ContainerSubtitle>

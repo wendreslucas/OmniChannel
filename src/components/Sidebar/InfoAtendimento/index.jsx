@@ -1,12 +1,16 @@
-import React, { useContext } from 'react';
+import React, { useState, useCallback } from 'react';
 import { Box, Aling, Value, EmailIcon, CallIcon, WhatsappIcon } from './styles';
 import { Text } from '../../Typography/Text/index';
+import { useCallContext } from './../../../hooks/useCallContext';
 
 export const InfoAtendimento = () => {
+  const context = useCallContext();
+
   return (
     <Box>
       <Text weight="700" fontSize="18px" color="var(--black)" lineHeight="25px">
-        Emanuelle Costa
+        {/* {context.nome} */}
+        André Silva e Santos
       </Text>
       <Aling>
         <Text
