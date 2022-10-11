@@ -1,17 +1,11 @@
 import React from 'react';
 import { Container } from './styles';
 
-interface ILogoProps {
-  width: number;
-  height: number;
-  onClick: React.MouseEventHandler<HTMLButtonElement>;
-}
-
-export const Logo = (props: ILogoProps) => {
+export const Logo = (props) => {
   const { width, height, onClick } = props;
   return (
     <Container onClick={onClick}>
-      <img src="/logo.png" width={width} height={height} />
+      <img src="/logo.png" width={width} height={height} alt="logo" />
     </Container>
   );
 };

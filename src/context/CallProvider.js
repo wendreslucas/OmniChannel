@@ -6,13 +6,13 @@ const CallContext = createContext();
 const CallProvider = ({ children }) => {
   const [data, setData] = useState([]);
 
-  function updateUser(user) {
-    console.log('updateUser', user);
-    setData(user);
+  function updateLista(users) {
+    console.log('updateLista', users);
+    setData(users);
   }
 
   return (
-    <CallContext.Provider value={{ data, updateUser }}>
+    <CallContext.Provider value={{ data, updateLista }}>
       {children}
     </CallContext.Provider>
   );

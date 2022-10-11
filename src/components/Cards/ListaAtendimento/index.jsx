@@ -1,15 +1,14 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import { apiAtendimentos } from './../../../services/api';
 import { CardAtendimento } from './../CardAtendimento/index';
 import { useCallContext } from './../../../hooks/useCallContext';
 
 export const ListaAtendimento = () => {
-  const [atendimentos, setAtendimentos] = useState([]);
   const context = useCallContext();
 
   useEffect(() => {
     apiAtendimentos.get('chamados').then((chamados) => {
-      context.updateUser(chamados.data);
+      context.updateLista(chamados.data);
     });
   }, []);
 

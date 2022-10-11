@@ -1,16 +1,16 @@
-import React, { useState, useCallback } from 'react';
+import React from 'react';
 import { Box, Aling, Value, EmailIcon, CallIcon, WhatsappIcon } from './styles';
 import { Text } from '../../Typography/Text/index';
 import { useCallContext } from './../../../hooks/useCallContext';
 
 export const InfoAtendimento = () => {
   const context = useCallContext();
+  console.log(context.data);
 
   return (
     <Box>
       <Text weight="700" fontSize="18px" color="var(--black)" lineHeight="25px">
-        {/* {context.nome} */}
-        André Silva e Santos
+        {context.nome}
       </Text>
       <Aling>
         <Text
@@ -21,7 +21,7 @@ export const InfoAtendimento = () => {
         >
           ID:
         </Text>
-        <Value>004837</Value>
+        <Value>{context.id}</Value>
       </Aling>
       <Aling>
         <Text

@@ -3,7 +3,7 @@ import React, { createContext, useState, useCallback } from 'react';
 export const LeftMenuContext = createContext();
 
 export function LeftMenuContextProvider({ children }) {
-  const [atendimentos, setAtendimentos] = useState([]);
+  const [setAtendimentos] = useState([]);
   const [search, setInputSearch] = useState('');
 
   const [rotateSaude, setRotateSaude] = useState(false);

@@ -1,4 +1,4 @@
-import React, { useContext, useCallback, useState } from 'react';
+import React, { useContext } from 'react';
 
 import {
   Container,
@@ -17,7 +17,7 @@ import { Title } from '../Typography/Title/index';
 import { StyledInput, Input } from '../Input/InputSearch/styles';
 import { Counter } from '../Counter';
 import { Text } from '../Typography/Text/index';
-import { CardEstatico } from './../Cards/CardEstático/index';
+// import { CardEstatico } from './../Cards/CardEstático/index';
 import { ListaAtendimento } from './../Cards/ListaAtendimento/index';
 import { ListaEspera } from './../Cards/ListaEspera/index';
 import { LeftMenuContext } from './../../context/LeftMenuContext';
