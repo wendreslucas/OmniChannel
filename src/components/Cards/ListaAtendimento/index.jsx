@@ -14,9 +14,9 @@ export const ListaAtendimento = () => {
 
   return (
     <>
-      {context.data.map((atendimento, index) => (
+      {context.data.map((atendimento) => (
         <CardAtendimento
-          key={index}
+          key={atendimento.id}
           nome={atendimento.nome}
           dateTime={atendimento.dateTime}
           imagem={atendimento.imagem}
