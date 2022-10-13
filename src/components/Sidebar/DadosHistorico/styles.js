@@ -15,8 +15,8 @@ export const Container = styled.div`
   flex-grow: 0;
 `;
 
-export const StyledSpan = styled.span`
-  border-bottom: ${props => (props.active ? '1px solid var(--primary)' : '')};
+export const StyledSpan = styled.button`
+  border-bottom: ${(props) => (props.active ? '1px solid var(--primary)' : '')};
 
   font-family: 'Raleway';
   font-style: normal;

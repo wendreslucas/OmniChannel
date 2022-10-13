@@ -2,7 +2,7 @@ import React from 'react';
 import { InfoAtendimento } from './InfoAtendimento/index';
 import { Container, ContainerAtendimento } from './styles';
 import { ButtonsAtendimento } from './ButtonsAtendimento/index';
-import { DetalhesAtendimento } from './Detalhes/index';
+import { DetalhesLayout } from './Detalhes/index';
 
 export const Sidebar = () => {
   return (
@@ -11,7 +11,7 @@ export const Sidebar = () => {
         <InfoAtendimento />
         <ButtonsAtendimento />
       </ContainerAtendimento>
-      <DetalhesAtendimento />
+      <DetalhesLayout />
     </Container>
   );
 };
