@@ -8,6 +8,7 @@ export const DadosHistorico = () => {
 
   const handleActive = useCallback(() => {
     setActive((prevSate) => !prevSate);
+    active === ''; // ajustar verificação de qual botão está ativado
   });
 
   function handleDados() {
