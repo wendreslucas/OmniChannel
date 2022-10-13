@@ -7,21 +7,27 @@ export const DadosHistorico = () => {
   const [active, setActive] = useState(false);
 
   const handleActive = useCallback(() => {
-    setActive((prevSate) => !prevSate.active);
+    setActive((prevSate) => !prevSate);
   });
 
   function handleDados() {
     navigate('/');
+    handleActive();
   }
 
   function handleHistorico() {
     navigate('/historico');
+    handleActive();
   }
 
   return (
     <Container>
-      <StyledSpan onClick={handleDados}>Dados</StyledSpan>
-      <StyledSpan onClick={handleHistorico}>Histórico</StyledSpan>
+      <StyledSpan active={active} onClick={handleDados}>
+        Dados
+      </StyledSpan>
+      <StyledSpan active={!active} onClick={handleHistorico}>
+        Histórico
+      </StyledSpan>
     </Container>
   );
 };
